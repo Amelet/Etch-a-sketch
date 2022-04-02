@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="all">
+    <div class="header">
+        <p>Etch a sketch</p>
+        <div class="userPanel">
+            <form>
+                <input class="set_res" type="text" id="input_id" value="" placeholder="Canvas size">
+                <input class="new" type="button" value="Create new canvas" onclick="startNewPicture()" />
+                
+            </form>
+            <div class="colors">
+                <button class="color_button" id="redbtn">  </button>
+                <button class="color_button" id="bluebtn">  </button>
+                <button class="color_button" id="erasebtn">  </button>
+            </div>
+        </div>
+        <button class="delete" onclick="clearCanvas()">Clear canvas</button>
+    </div>
+    <div class="bod">
+        <div id="alert"></div>
+        <div class="grid-container">
+
+        </div>
+    </div>
+    <div class="footer">BG photo by <a href="https://unsplash.com/@leyameera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tina Dawson</a> on <a href="https://unsplash.com/s/photos/concrete-texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+<script src="app.js"></script>    
+</body>
+</html>
